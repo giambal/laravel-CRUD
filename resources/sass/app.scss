@@ -1,9 +1,11 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 // Variables
 @import 'variables';
 @import 'header';
+@import "footer";
 
 
 *{
@@ -13,7 +15,119 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.listTitle{
+.title{
   text-align: center;
+  height: 45px;
   background-color: rgb(100,100,100);
+  display: flex;
+  width: 100vw;
+
+  div{
+
+    width: 33.3%;
+  }
+
+  .link{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        /* unvisited link */
+    a:link {
+      color: black;
+      text-decoration: none;
+
+    }
+
+    /* visited link */
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* selected link */
+    a:active {
+      color: white;
+      text-decoration: none;
+
+    }
+  }
+}
+
+.tableCar{
+  margin: auto;
+  background-color: rgb(150,150,150);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width:100vw;
+  height: calc(100vh - 187.8px);
+  padding: 20px 0;
+  font-size: 1.5em;
+  overflow: auto;
+
+  table{
+
+    tr{
+
+      td{
+        padding:10px;
+        border: 1px solid black;
+
+        .link{
+
+          color:black;
+
+        }
+      }
+    }
+  }
+
+}
+
+.carForm{
+
+  margin: auto;
+  background-color: rgb(150,150,150);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width:100vw;
+  height: calc(100vh - 187.8px);
+  padding: 20px 0;
+  font-size: 1.5em;
+
+  form{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .formDiv{
+      // text-align: center;
+      margin: 20px;
+    }
+
+    button{
+
+      background-color:rgb(190,190,190);
+      border :1px solid black;
+      padding: 10px;
+      font-size: 1em;
+    }
+  }
+}
+
+.del-butt{
+  background-color: rgb(150,150,150);
+  border: none;
+  font-size: 1em;
 }

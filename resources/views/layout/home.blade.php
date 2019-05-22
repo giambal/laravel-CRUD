@@ -11,7 +11,11 @@
       <h1>CAR DATABASE</h1>
     </header>
 
-    @yield('content')
+      @yield('content')
+
+    <footer>
+      Database di Giammarco.
+    </footer>
 
   </body>
 </html>
