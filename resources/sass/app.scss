@@ -1,0 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+// Variables
+@import 'variables';
+@import 'header';
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.listTitle{
+  text-align: center;
+  background-color: rgb(100,100,100);
+}
